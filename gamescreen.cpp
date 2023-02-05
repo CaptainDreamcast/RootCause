@@ -294,6 +294,7 @@ public:
 			changeMugenText(titleScreenHighScoreText, ss.str().c_str());
 			setMugenTextVisibility(titleScreenHighScoreText, true);
 		}
+		stopStreamingMusicFile();
 		streamMusicFile("tracks/4.ogg");
 		titleIsFadingOut = 0;
 		currentScreen = 0;
@@ -320,6 +321,7 @@ public:
 		currentScreen = 1;
 		if (fullRestart)
 		{
+			stopStreamingMusicFile();
 			streamMusicFile("tracks/3.ogg");
 			startGame();
 		}

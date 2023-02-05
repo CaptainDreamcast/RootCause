@@ -20,7 +20,7 @@ KOS_INIT_ROMDISK(romdisk);
 
 #endif
 
-//#define DEVELOP
+// #define DEVELOP
 
 void exitGame() {
 	shutdownPrismWrapper();
